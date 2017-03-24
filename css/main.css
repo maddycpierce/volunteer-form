@@ -25,6 +25,10 @@ fieldset {
   border: none;
 }
 
+hr {
+  border-color: #70ad55;
+}
+
 footer {
   background-color: #70ad55;
   color: #fff;
