@@ -21,6 +21,10 @@ input[type="radio"] + label::before {
   border: none;
 }
 
+fieldset {
+  border: none;
+}
+
 footer {
   background-color: #70ad55;
   color: #fff;

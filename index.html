@@ -19,13 +19,14 @@
     </header>
 
     <form class="pad-t-2">
-      <h2 class="push">Personal details</h2>
+      <fieldset>
+        <legend class="push">Personal details</legend>
 
-        <div>
-          <label for="name">Full name</label>
-          <input id="name">
-          <p class="italic micro">Your full legal name, for insurance purposes, e.g. “Elizabeth Bradley”.</p>
-        </div>
+            <div>
+              <label for="name">Full name</label>
+              <input id="name">
+              <p class="italic micro">Your full legal name, for insurance purposes, e.g. “Elizabeth Bradley”.</p>
+            </div>
 
         <div>
           <label for="nickname">What should we call you?</label>
@@ -60,13 +61,15 @@
           <input class="push" type="email" id="email">
         </div>
 
-        <div class="pad-b-2">
+        <div class="push-half">
           <label for="tel">Phone number (optional)</label>
           <input type="tel" id="tel">
         </div>
+      </fieldset>
 
       <hr>
-      <h2 class="push-half">Address</h2>
+      <fieldset>
+        <legend class="push pad-t-1-2">Address</legend>
 
         <div>
           <label for="address">Street address</label>
@@ -98,13 +101,14 @@
           </select>
         </div>
 
-        <div class="pad-b-2">
+        <div class="pad-b-1-2">
           <label for="postal-code">Postal code</label>
           <input class="push" id="postal-code">
         </div>
 
       <hr>
-      <h2 class="push-half">What activities are you interested in helping with?</h2>
+      <fieldset>
+        <legend class="push-half">What activities are you interested in helping with?</legend>
 
         <div>
           <input id="digging" type="checkbox">
@@ -195,14 +199,14 @@
           <label for="event-planning">Special event planning</label>
         </div>
 
-        <div class="push-half">
+        <div class="push">
           <input id="speaking" type="checkbox">
           <label class="push" for="speaking">Speaking to groups</label>
         </div>
 
         <hr>
-        <div class="push-half">
-          <h2>Do you have a valid driver’s license?</h2>
+        <div class="push-2">
+          <h2 class="push-1-2">Do you have a valid driver’s license?</h2>
           <input id="license-yes" type="radio" name="drivers-license">
           <label for="license-yes">Yes</label>
 
@@ -210,8 +214,8 @@
           <label for="license-no">No</label>
         </div>
 
-        <div class="push">
-          <h2>Do you have a pick-up truck you’d be willing to use?</h2>
+        <div class="push-2">
+          <h2 class="push-1-2">Do you have a pick-up truck you’d be willing to use?</h2>
           <input id="pickup-yes" type="radio" name="truckpickup">
           <label for="pickup-yes">Yes</label>
 
@@ -219,8 +223,8 @@
           <label for="pickup-no">No</label>
         </div>
 
-        <div class="push">
-          <h2>Do you have up-to-date first-aid certification?</h2>
+        <div class="push-2">
+          <h2 class="push-1-2">Do you have up-to-date first-aid certification?</h2>
           <input id="firstaid-yes" type="radio" name="first-aid">
           <label for="firstaid-yes">Yes</label>
 
@@ -229,8 +233,8 @@
         </div>
 
         <hr>
-        <div>
-          <label for="message" class="bold">Please let us know any comments or questions you may have.</label>
+        <div class="pad-t">
+          <label class="push-1-2 bold" for="message">Please let us know any comments or questions you may have.</label>
           <textarea id="message"></textarea>
         </div>
 
