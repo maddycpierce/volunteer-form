@@ -9,11 +9,9 @@ header {
 
 input,
 select,
-textarea {
-  border-color: #6e8c62;
-}
-
-.check-box {
+textarea,
+input[type="checkbox"] + label::before,
+input[type="radio"] + label::before {
   border-color: #6e8c62;
 }
 

@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-ca">
   <head>
     <meta charset="utf-8">
     <title>VVolunteer Sign-up</title>
-    <link href="css/modules.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700" rel="stylesheet">
     <link href="css/grid.css" rel="stylesheet">
+    <link href="css/modules.css" rel="stylesheet">
     <link href="css/type.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -36,12 +36,13 @@
 
             <div>
               <label for="date">Date of birth</label>
-              <input class="push" id="date" placeholder="yyyy-mm-dd">
+              <input class="push" id="date" type="date">
             </div>
 
             <div>
               <label for="tshirt">T-shirt size</label>
-              <select class="push" id="tshirt" placeholder="Select a t-shirt size">
+              <select class="push" id="tshirt">
+                <option value="">Select a t-shirt size</option>
                 <option>Fitted: XS</option>
                 <option>Fitted: S</option>
                 <option>Fitted: M</option>
@@ -57,12 +58,12 @@
 
             <div>
               <label for="email">Email</label>
-              <input class="push" id="email">
+              <input class="push" type="email" id="email">
             </div>
 
             <div>
-              <label for="phone">Phone number (optional)</label>
-              <input id="phone">
+              <label for="tel">Phone number (optional)</label>
+              <input type="tel" id="tel">
             </div>
           </fieldset>
 
@@ -81,7 +82,8 @@
 
             <div>
               <label for="province">Province</label>
-              <select class="push" id="province" placeholder="Select a province">
+              <select class="push" id="province">
+                <option value="">Select a province</option>
                 <option>Alberta</option>
                 <option>British Columbia</option>
                 <option>Manitoba</option>
@@ -111,28 +113,43 @@
             <div>
               <input id="digging" type="checkbox">
               <label for="digging">Digging holes</label>
+            </div>
 
+            <div>
               <input id="dirty" type="checkbox">
               <label for="dirty">Getting dirty</label>
+            </div>
 
+            <div>
               <input id="lifting" type="checkbox">
               <label for="lifting">Lifting heavy objects</label>
+            </div>
 
+            <div>
               <input id="driving" type="checkbox">
               <label for="driving">Driving people</label>
+            </div>
 
+            <div>
               <input id="transporting" type="checkbox">
               <label for="transporting">Transporting trees</label>
+            </div>
 
+            <div>
               <input id="photos" type="checkbox">
               <label for="photos">Taking photos</label>
+            </div>
 
+            <div>
               <input id="publishing" type="checkbox">
               <label for="publishing">Online publishing</label>
+            </div>
 
+            <div>
               <input id="managing" type="checkbox">
               <label class="push" for="managing">Managing people</label>
             </div>
+          </fieldset>
 
           <fieldset>
             <legend class="push-half">Do you have any experience with the following?</legend>
@@ -140,74 +157,92 @@
             <div>
               <input id="shovels" type="checkbox">
               <label for="shovels">Shovels</label>
+            </div>
 
+            <div>
               <input id="gps" type="checkbox">
               <label for="gps">Hand-held GPS</label>
+            </div>
 
+            <div>
               <input id="writing" type="checkbox">
               <label for="writing">Writing & blogging</label>
+            </div>
 
+            <div>
               <input id="photography" type="checkbox">
               <label for="photography">Photography</label>
+            </div>
 
+            <div>
               <input id="climbing" type="checkbox">
               <label for="climbing">Trail & hill climbing</label>
+            </div>
 
+            <div>
               <input id="bush" type="checkbox">
               <label for="bush">Bush craft</label>
+            </div>
 
+            <div>
               <input id="atvs" type="checkbox">
               <label for="atvs">ATVs</label>
+            </div>
 
-              <input id="plant" type="checkbox">
+            <div>
+              <input id="plant-id" type="checkbox">
               <label for="plant-id">Plant identification</label>
+            </div>
 
+            <div>
               <input id="event-planning" type="checkbox">
               <label for="event-planning">Special event planning</label>
+            </div>
 
+            <div>
               <input id="speaking" type="checkbox">
               <label class="push" for="speaking">Speaking to groups</label>
             </div>
 
             <div class="push">
               <h2>Do you have a valid driver’s license?</h2>
-                <input id="yes" type="radio" name="drivers-license">
-                <label for="yes">Yes</label>
+                <input id="license-yes" type="radio" name="drivers-license">
+                <label for="license-yes">Yes</label>
 
-                <input id="no" type="radio" name="drivers-license">
-                <label for="no">No</label>
+                <input id="license-no" type="radio" name="drivers-license">
+                <label for="license-no">No</label>
             </div>
 
             <div class="push">
               <h2>Do you have a pick-up truck you’d be willing to use?</h2>
-                <input id="yes" type="radio" name="pickup">
-                <label for="yes">Yes</label>
+                <input id="pickup-yes" type="radio" name="truckpickup">
+                <label for="pickup-yes">Yes</label>
 
-                <input id="no" type="radio" name="pickup">
-                <label for="no">No</label>
+                <input id="pickup-no" type="radio" name="truckpickup">
+                <label for="pickup-no">No</label>
             </div>
 
             <div class="push">
               <h2>Do you have up-to-date first-aid certification?</h2>
-                <input id="yes" type="radio" name="first-aid">
-                <label for="yes">Yes</label>
+                <input id="firstaid-yes" type="radio" name="first-aid">
+                <label for="firstaid-yes">Yes</label>
 
-                <input id="no" type="radio" name="first-aid">
-                <label for="no">No</label>
+                <input id="firstaid-no" type="radio" name="first-aid">
+                <label for="firstaid-no">No</label>
             </div>
 
             <div>
-              <label for="message">Please let us know any comments or questions you may have.</message>
+              <label for="message">Please let us know any comments or questions you may have.</label>
               <textarea id="message"></textarea>
             </div>
 
             <div class="island">
               <button class="btn" type="submit">Apply</button>
             </div>
+          </fieldset>
       </form>
     <footer class="small">© Tree Hugger International Organization</footer>
-
-
+  </section>
 
   </body>
 </html>
