@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <title>VVolunteer Sign-up</title>
   <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700" rel="stylesheet">
-  <link href="css/type.css" rel="stylesheet">
-  <link href="css/grid.css" rel="stylesheet">
   <link href="css/modules.css" rel="stylesheet">
+  <link href="css/grid.css" rel="stylesheet">
+  <link href="css/type.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
@@ -19,8 +19,7 @@
     </header>
 
     <form class="pad-t-2">
-      <fieldset>
-        <legend class="push">Personal details</legend>
+      <h2 class="push">Personal details</h2>
 
         <div>
           <label for="name">Full name</label>
@@ -61,14 +60,13 @@
           <input class="push" type="email" id="email">
         </div>
 
-        <div>
+        <div class="pad-b-2">
           <label for="tel">Phone number (optional)</label>
           <input type="tel" id="tel">
         </div>
-      </fieldset>
 
-      <fieldset>
-        <legend class="push">Address</legend>
+      <hr>
+      <h2 class="push-half">Address</h2>
 
         <div>
           <label for="address">Street address</label>
@@ -100,15 +98,13 @@
           </select>
         </div>
 
-        <div>
+        <div class="pad-b-2">
           <label for="postal-code">Postal code</label>
           <input class="push" id="postal-code">
         </div>
 
-      </fieldset>
-
-      <fieldset>
-        <legend class="push-half">What activities are you interested in helping with?</legend>
+      <hr>
+      <h2 class="push-half">What activities are you interested in helping with?</h2>
 
         <div>
           <input id="digging" type="checkbox">
@@ -199,12 +195,13 @@
           <label for="event-planning">Special event planning</label>
         </div>
 
-        <div>
+        <div class="push-half">
           <input id="speaking" type="checkbox">
           <label class="push" for="speaking">Speaking to groups</label>
         </div>
 
-        <div class="push">
+        <hr>
+        <div class="push-half">
           <h2>Do you have a valid driver’s license?</h2>
           <input id="license-yes" type="radio" name="drivers-license">
           <label for="license-yes">Yes</label>
@@ -231,8 +228,9 @@
           <label for="firstaid-no">No</label>
         </div>
 
+        <hr>
         <div>
-          <label for="message">Please let us know any comments or questions you may have.</label>
+          <label for="message" class="bold">Please let us know any comments or questions you may have.</label>
           <textarea id="message"></textarea>
         </div>
 
