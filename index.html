@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>VVolunteer Sign-up</title>
     <link href="css/modules.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700" rel="stylesheet">
     <link href="css/grid.css" rel="stylesheet">
     <link href="css/type.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
@@ -11,34 +12,36 @@
   </head>
   <body>
 
-    <section>
-      <h1>Apply to be a tree planter</h1>
-        <p>Trees are one of the world’s most precious renewable resources—we need your help to renew the ecosystem.</p>
+    <section class="gutter-1-2">
+      <header>
+        <h1>Apply to be a tree planter</h1>
+          <p>Trees are one of the world’s most precious renewable resources—we need your help to renew the ecosystem.</p>
+      </header>
 
         <form>
           <fieldset>
-            <legend>Personal details</legend>
+            <legend class="push">Personal details</legend>
 
             <div>
               <label for="name">Full name</label>
               <input id="name">
-              <p>Your full legal name, for insurance purposes, e.g. “Elizabeth Bradley”.</p>
+              <p class="italic micro">Your full legal name, for insurance purposes, e.g. “Elizabeth Bradley”.</p>
             </div>
 
             <div>
               <label for="nickname">What should we call you?</label>
               <input id="nickname">
-              <p>What all your friends call you, e.g. “Liz”.</p>
+              <p class="italic micro">What all your friends call you, e.g. “Liz”.</p>
             </div>
 
             <div>
               <label for="date">Date of birth</label>
-              <input id="date" placeholder="yyyy-mm-dd">
+              <input class="push" id="date" placeholder="yyyy-mm-dd">
             </div>
 
             <div>
               <label for="tshirt">T-shirt size</label>
-              <select id="tshirt" placeholder="Select a t-shirt size">
+              <select class="push" id="tshirt" placeholder="Select a t-shirt size">
                 <option>Fitted: XS</option>
                 <option>Fitted: S</option>
                 <option>Fitted: M</option>
@@ -54,7 +57,7 @@
 
             <div>
               <label for="email">Email</label>
-              <input id="email">
+              <input class="push" id="email">
             </div>
 
             <div>
@@ -64,26 +67,21 @@
           </fieldset>
 
           <fieldset>
-            <legend>Address</legend>
+            <legend class="push">Address</legend>
 
             <div>
               <label for="address">Street address</label>
-              <input id="address">
+              <input class="push" id="address">
             </div>
 
             <div>
               <label for="city">City</label>
-              <input id="city">
-            </div>
-
-            <div>
-              <label for="postal-code">Postal code</label>
-              <input id="postal-code">
+              <input class="push" id="city">
             </div>
 
             <div>
               <label for="province">Province</label>
-              <select id="province" placeholder="Select a province">
+              <select class="push" id="province" placeholder="Select a province">
                 <option>Alberta</option>
                 <option>British Columbia</option>
                 <option>Manitoba</option>
@@ -99,10 +97,16 @@
                 <option>Yukon</option>
               </select>
             </div>
+
+            <div>
+              <label for="postal-code">Postal code</label>
+              <input class="push" id="postal-code">
+            </div>
+
           </fieldset>
 
           <fieldset>
-            <legend>What activities are you interested in helping with?</legend>
+            <legend class="push-half">What activities are you interested in helping with?</legend>
 
             <div>
               <input id="digging" type="checkbox">
@@ -127,11 +131,11 @@
               <label for="publishing">Online publishing</label>
 
               <input id="managing" type="checkbox">
-              <label for="managing">Managing people</label>
+              <label class="push" for="managing">Managing people</label>
             </div>
 
           <fieldset>
-            <legend>Do you have any experience with the following?</legend>
+            <legend class="push-half">Do you have any experience with the following?</legend>
 
             <div>
               <input id="shovels" type="checkbox">
@@ -162,34 +166,34 @@
               <label for="event-planning">Special event planning</label>
 
               <input id="speaking" type="checkbox">
-              <label for="speaking">Speaking to groups</label>
+              <label class="push" for="speaking">Speaking to groups</label>
             </div>
 
-            <div>
+            <div class="push">
               <h2>Do you have a valid driver’s license?</h2>
                 <input id="yes" type="radio" name="drivers-license">
                 <label for="yes">Yes</label>
 
                 <input id="no" type="radio" name="drivers-license">
-                <label for="no">Yes</label>
+                <label for="no">No</label>
             </div>
 
-            <div>
+            <div class="push">
               <h2>Do you have a pick-up truck you’d be willing to use?</h2>
                 <input id="yes" type="radio" name="pickup">
                 <label for="yes">Yes</label>
 
                 <input id="no" type="radio" name="pickup">
-                <label for="no">Yes</label>
+                <label for="no">No</label>
             </div>
 
-            <div>
+            <div class="push">
               <h2>Do you have up-to-date first-aid certification?</h2>
                 <input id="yes" type="radio" name="first-aid">
                 <label for="yes">Yes</label>
 
                 <input id="no" type="radio" name="first-aid">
-                <label for="no">Yes</label>
+                <label for="no">No</label>
             </div>
 
             <div>
@@ -197,9 +201,11 @@
               <textarea id="message"></textarea>
             </div>
 
-            <button type="submit">Apply</button>
+            <div class="island">
+              <button class="btn" type="submit">Apply</button>
+            </div>
       </form>
-        <footer class="small">© Tree Hugger International Organization</footer>
+    <footer class="small">© Tree Hugger International Organization</footer>
 
 
 

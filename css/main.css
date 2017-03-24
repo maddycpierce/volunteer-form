@@ -1,0 +1,29 @@
+html {
+  font-family: "Droid Serif", serif;
+}
+
+header {
+  background-color: #70ad55;
+  color: #fff;
+}
+
+input,
+select,
+textarea {
+  border-color: #6e8c62;
+}
+
+.check-box {
+  border-color: #6e8c62;
+}
+
+.btn {
+  background-color: #6e8c62;
+  color: #fff;
+  border: none;
+}
+
+footer {
+  background-color: #70ad55;
+  color: #fff;
+}
